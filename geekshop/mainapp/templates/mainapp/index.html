@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#"> <img class="logo" src="/static/img/logo.png" alt="logo"> </a> <a href=""><img src="/static/img/search.png" class="search"></a>
+            {% include 'mainapp/includes/menu.html' %}
+            <div class="text">
+                <h3>TRENDING</h3>
+                <h1>FISHNET CHAIR</h1>
+                <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black.</p> <a href="#">ORDER US</a> </div> <img src="/static/img/navigation.png" class="navia">
+            <a href="#"><img src="/static/img/active2.png" class="naviA"></a>
+        </div>
+        <div class="content">
+            <div class="product">
+                <ul class="menu">
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">New</a></li>
+                </ul> <a href="#" class="buttom1">EXPLORE ALL</a>
+                <ul class="products">
+                    <li>
+                        <a href="#">
+                            <div class="p1"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p2"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p3"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="p4"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            {% include 'mainapp/includes/exclusive.html' %}
+            <div class="trends">
+                <h1 class="p1">Trending Products</h1> <a href="#" class="buttom1">EXPLORE ALL</a>
+                {% include 'mainapp/includes/trends.html' %}
+            </div>
+            <div class="hot_deal">
+                <div class="text3">
+                    <h3>HOT DEAL</h3>
+                    <h1>FISHNET CHAIR</h1>
+                    <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder black.</p> <a href="#">ORDER US</a></div> <img src="/static/img/navigation.png" class="navi">
+                <a href="#"><img src="/static/img/active2.png" class="naviB"></a>
+            </div>
+            <div class="exclusive2">
+                <div class="prod1">
+                    <div class="text2">
+                        <h3>EXCLUSIVE</h3>
+                        <h1>Fishnet Chair</h1>
+                        <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt.</p> <a href="#">ORDER US</a> </div>
+                </div>
+            </div>
+            <div class="mobile_app">
+                <div class="content">
+                    <div></div>
+                     <h3>MOBILE APP</h3>
+                     <h1>FIND. FOLLOW. FAVORITE.</h1>
+                     <p>Save your favorites and share your style.</p>
+                  <a href=""><img src="/static/img/app-store.png" class="appstore"></a>
+                  <a href=""><img src="/static/img/google-play.png" class="googleplay"></a></div>
+            </div>
+        </div>
+        {% include 'mainapp/includes/footer.html' %}
+    </div>
+</body>
+
+</html>
