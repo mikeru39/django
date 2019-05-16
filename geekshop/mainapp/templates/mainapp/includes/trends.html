@@ -1,0 +1,5 @@
+<ul>
+    {% for product in products %}
+        <li><img src="/media/{{ product.image }}"><br><a href="{% url 'basket:add' product.pk %}">Добавить</a></li>
+    {% endfor %}
+</ul>
