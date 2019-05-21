@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header2">
+            <a href="{% url 'main' %}"> <img class="logo" src="/static/img/logo.png" alt="logo"> </a> <a href="#"><img src="/static/img/search.png" class="search"></a>
+            {% include 'mainapp/includes/menu.html'%}
+            <h3>Contact Us</h3>
+        </div>
+        <div class="content2">
+            <ul>
+                <li>
+                    <div class="el">
+                        <img src="/static/img/gps.png" class="GPS" />
+                        <h1>CALIFORNIA</h1>
+                        <h3>Phone:</h3>
+                        <p>1900 - 1234 - 5678</p>
+                        <h3>Email:</h3>
+                        <p>info@interior.com</p>
+                        <h3>Address:</h3>
+                        <h5>12 W 1st St, 90001 Los Angeles, California</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="el">
+                        <img src="/static/img/gps.png" class="GPS" />
+                        <h1>CALIFORNIA</h1>
+                        <h3>Phone:</h3>
+                        <p>1900 - 1234 - 5678</p>
+                        <h3>Email:</h3>
+                        <p>info@interior.com</p>
+                        <h3>Address:</h3>
+                        <h5>12 W 1st St, 90001 Los Angeles, California</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="el">
+                        <img src="/static/img/gps.png" class="GPS" />
+                        <h1>CALIFORNIA</h1>
+                        <h3>Phone:</h3>
+                        <p>1900 - 1234 - 5678</p>
+                        <h3>Email:</h3>
+                        <p>info@interior.com</p>
+                        <h3>Address:</h3>
+                        <h5>12 W 1st St, 90001 Los Angeles, California</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        {% include 'mainapp/includes/footer.html' %}
+    </div>
+
+</body>
+</html>
