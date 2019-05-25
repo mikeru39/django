@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css"> </head>
+
+<body>
+    <div class="container">
+        <div class="header2">
+            <a href="{% url 'main' %}"> <img class="logo" src="/static/img/logo.png" alt="logo"> </a>
+            <a href="#"><img src="/static/img/search.png" class="search"></a>
+            {% include 'mainapp/includes/menu.html' %}
+            <h3>Our Products Range</h3> </div>
+        <div class="content">
+            {% include 'mainapp/includes/inc_categories_menu.html' %}
+            <div class="trends">
+                {% include 'mainapp/includes/trends.html' %}
+                <a href="#" class="update"><img src="/static/img/update.png" alt=""></a>
+                {% include 'mainapp/includes/footer.html' %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
